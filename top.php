@@ -6,13 +6,13 @@
 			<li>
 				<a href="">网站首页</a>
 				<a href="">产品展示</a>
-				<a href="">新闻动态</a>
-				<a href="">行业动态</a>
-				<a href="">案例中心</a>
+				<a href="">压力仪表</a>
+				<a href="">液位仪表</a>
+				<a href="">温度仪表</a>
+				<a href="">流量仪表</a>
+				<a href="">温度仪表</a>
 				<a href="">解决方案</a>
-				<a href="">新闻动态</a>
-				<a href="">合作伙伴</a>
-				<a href="">关于我们</a>
+				<a href="">行业动态</a>
 				<a href="">联系我们</a>
 			</li>
 		</ul>		

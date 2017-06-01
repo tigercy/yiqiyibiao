@@ -71,22 +71,31 @@
 			
 		<section id="floor1">
 				<div class="floor1 clear">
-					<h3>产品推荐<span>查看全部</span></h3>
+					<h3>热门推荐<span>查看全部</span></h3>
 					<div class="floor1-left">
-						<a href="">人气产品</a><a href="">热销产品</a>
-						
-						
-						<div id="x">
-							<h3>选项卡1</h3>
-							<h3>选项卡2</h3>
-						</div>
-						<div id="y">
-							<div>1</div>
-							<div>2</div>
+						<div class="floor1-left-top" id="floora"><a href="#" style="background:#d9002f" num="0">人气产品</a><a href="#" num="1">热销产品</a></div>
+						<div class="floor1-left-bottom" id="floordiv">
+							<div class="floor1-left-bottom-nav">
+								<ul>
+									<li><a href="#"><i>1</i>工程继续高压胶管</a></li>
+									<li><a href="#"><i>2</i>橡胶软管接头</a></li>
+									<li><a href="#"><i>3</i>橡胶球硅胶球</a></li>
+									<li><a href="#"><i>4</i>高压胶管总成</a></li>
+									<li><a href="#"><i>5</i>大口径夹胶管</a></li>
+								</ul>
+								<div class="showimg valign"><img src="images/p1.png"></div>
+							</div>
+							<div class="floor1-left-bottom-nav" style="display:none;">
+								<ul>
+									<li><a href="#"><i>6</i>工程继续高压胶管</a></li>
+									<li><a href="#"><i>7</i>橡胶软管接头</a></li>
+									<li><a href="#"><i>8</i>橡胶球硅胶球</a></li>
+									<li><a href="#"><i>9</i>高压胶管总成</a></li>
+									<li><a href="#"><i>10</i>大口径夹胶管</a></li>
+								</ul>
+								<div class="showimg valign"><img src="images/p6.png"></div>
+							</div>
 						</div>	
-						
-						
-						
 					</div>
 					<ul class="clear" id="show">
 						<li style="position:relative;"><a href="#"><div class="valign sf"><img src="images/p1.png"/></div><p><b>加防震环金属软管</b>质量不错不生锈适用时间长</p><i style="position:absolute;left:0px;bottom:0px; z-index:-1;display:block;width:230px;height:100px;background:#fcf;"></i></a></li>
@@ -102,7 +111,21 @@
 				
 		</section>
 			
+		<section id="floor2">
+			<div class="floor2-top">压力仪表</div>
+			<div class="floor2-bottom">
+				<div class="divbox clear">
+					<a href="#"><img src="images/y1.jpg"></a>
+					<a href="#"><img src="images/y2.jpg"></a>
+					<a href="#"><img src="images/y4.jpg"></a>
+					<a href="#"><img src="images/y3.jpg"></a>
+
+					<a href="#"><img src="images/y2.jpg"></a>
+					<a href="#"><img src="images/y3.jpg"></a>
+				</div>
+			</div>
 			
+		</section>	
 			
 			
 			

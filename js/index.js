@@ -16,14 +16,17 @@ $(function(){
 		}
 	);
 	$("#show").delegate("li","mouseenter",function(){
-		console.log("asdf");
 	  	$(this).css({"box-shadow":"0 0 10px #333"});
 	  	$(this).animate({"background-color":"#d9002f"},1000);
 	});
-	
 	$("#show").delegate("li","mouseleave",function(){
-		console.log("asdf");
 	  	$(this).css({"box-shadow":"0 0 0 #fcf"});
+	});
+	
+	$("#floora").delegate("a","mouseenter",function(){
+	  	$(this).css({"background":"#d9002f"}).siblings().css({"background":"#ab0126"});
+	  	var num=$(this).attr("num");
+	  	$(".floor1-left-bottom-nav").css({"display":"none"}).eq(num).css({"display":"block"});	
 	});
 });
 //轮播图对象
@@ -157,7 +160,6 @@ Slideshow.prototype.fadeInOut=function(){
 Slideshow.prototype.changeBtnColor=function(){
 	$("#listitem li:eq("+(this.currInOrd-1)+")").css({"background-color":this.btnHighColor}).siblings().css({"background-color":this.btnColor});
 }	
-	console.log(this.currInOrd);
 //让轮播停止
 Slideshow.prototype.stopChange=function(){
 	window.clearInterval(this.timer);

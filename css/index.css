@@ -82,6 +82,7 @@ header {
     header .top1 a.te2 {
       margin-right: 20px; }
 
+/*banner切换*/
 #banner {
   width: 1200px;
   margin: 0 auto;
@@ -123,6 +124,7 @@ header {
     background-position: -120px 0px;
     z-index: 100; }
 
+/*精选*/
 #choice {
   width: 1200px;
   margin: 0 auto;
@@ -193,6 +195,115 @@ header {
   #choice .channel-column:last-child {
     margin-right: 0; }
 
+/*1楼*/
+#floor1 {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  background: #f5f5f5; }
+  #floor1 .floor1 {
+    width: 1200px;
+    margin: 0 auto; }
+    #floor1 .floor1 h3 {
+      float: left;
+      height: 60px;
+      width: 100%;
+      font: 22px/60px "微软雅黑"; }
+      #floor1 .floor1 h3 span {
+        float: right; }
+    #floor1 .floor1 .floor1-left {
+      float: left;
+      width: 230px;
+      height: 553px;
+      background: #d9002f; }
+      #floor1 .floor1 .floor1-left .floor1-left-top {
+        width: 230px;
+        height: 56px; }
+        #floor1 .floor1 .floor1-left .floor1-left-top a {
+          width: 115px;
+          height: 56px;
+          background: #ab0126;
+          display: inline-block;
+          text-align: center;
+          font: 18px/56px "微软雅黑";
+          color: #fff; }
+      #floor1 .floor1 .floor1-left .floor1-left-bottom {
+        padding: 25px;
+        height: auto; }
+        #floor1 .floor1 .floor1-left .floor1-left-bottom .floor1-left-bottom-nav {
+          width: 180px; }
+          #floor1 .floor1 .floor1-left .floor1-left-bottom .floor1-left-bottom-nav ul {
+            border-bottom: solid 1px #e1395a;
+            padding-bottom: 18px;
+            margin-bottom: 26px; }
+            #floor1 .floor1 .floor1-left .floor1-left-bottom .floor1-left-bottom-nav ul li {
+              font: 14px/50px "微软雅黑";
+              height: 50px; }
+              #floor1 .floor1 .floor1-left .floor1-left-bottom .floor1-left-bottom-nav ul li i {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background: #ab0126;
+                color: #fff;
+                text-align: center;
+                font: 14px/30px "微软雅黑";
+                margin-right: 8px; }
+              #floor1 .floor1 .floor1-left .floor1-left-bottom .floor1-left-bottom-nav ul li a {
+                color: #fff; }
+              #floor1 .floor1 .floor1-left .floor1-left-bottom .floor1-left-bottom-nav ul li a:hover {
+                color: #ab0126; }
+          #floor1 .floor1 .floor1-left .floor1-left-bottom .floor1-left-bottom-nav .showimg {
+            height: 142px;
+            width: 180px;
+            background: #fff; }
+    #floor1 .floor1 #show {
+      float: right;
+      width: 970px; }
+      #floor1 .floor1 #show li {
+        width: 230px;
+        height: 270px;
+        background: #fff;
+        margin: 0px 0px 12.5px 12.5px;
+        float: left; }
+        #floor1 .floor1 #show li .sf {
+          width: 230px;
+          height: 173px;
+          margin-top: 14px; }
+          #floor1 .floor1 #show li .sf img {
+            display: inline-block; }
+        #floor1 .floor1 #show li p {
+          font: 12px/26px "微软雅黑";
+          color: #979797;
+          text-align: center; }
+          #floor1 .floor1 #show li p b {
+            font-weight: bold;
+            color: #343434;
+            display: block; }
+
+/*压力仪表*/
+#floor2 {
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  background: #f5f5f5; }
+  #floor2 .floor2-top {
+    width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+    font: 22px/60px "微软雅黑"; }
+  #floor2 .floor2-bottom {
+    width: 1200px;
+    margin: 0 auto;
+    height: auto; }
+    #floor2 .floor2-bottom .divbox {
+      border-left: 1px solid #ddd;
+      border-top: 1px solid #ddd; }
+      #floor2 .floor2-bottom .divbox a {
+        float: left;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd; }
+
+/*底部导航*/
 #guide {
   width: 1200px;
   margin: 0 auto;
@@ -294,50 +405,7 @@ header {
         overflow: hidden;
         margin-top: 10px; }
 
-#floor1 {
-  width: 100%;
-  height: auto;
-  padding-top: 20px;
-  background: #f5f5f5; }
-  #floor1 .floor1 {
-    width: 1200px;
-    margin: 0 auto; }
-    #floor1 .floor1 h3 {
-      float: left;
-      height: 60px;
-      width: 100%;
-      font: 22px/60px "微软雅黑"; }
-      #floor1 .floor1 h3 span {
-        float: right; }
-    #floor1 .floor1 .floor1-left {
-      float: left;
-      width: 230px;
-      height: 553px;
-      background: #d9002f; }
-    #floor1 .floor1 ul {
-      float: right;
-      width: 970px; }
-      #floor1 .floor1 ul li {
-        width: 230px;
-        height: 270px;
-        background: #fff;
-        margin: 0px 0px 12.5px 12.5px;
-        float: left; }
-        #floor1 .floor1 ul li .sf {
-          width: 230px;
-          height: 173px;
-          margin-top: 14px; }
-          #floor1 .floor1 ul li .sf img {
-            display: inline-block; }
-        #floor1 .floor1 ul li p {
-          font: 12px/26px "微软雅黑";
-          color: #979797;
-          text-align: center; }
-          #floor1 .floor1 ul li p b {
-            font-weight: bold;
-            color: #343434;
-            display: block; }
-
+/*底部*/
 footer {
   width: 1200px;
   margin: 0 auto;
