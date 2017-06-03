@@ -1,0 +1,59 @@
+@charset "utf-8";
+$fontSize:12px;
+$fontfamily:"微软雅黑";
+@mixin juzhong{width:1000px;margin:0 auto;}
+header{height:80px;}
+.Left{float:left;}
+  .i-qq, .i-weibo, .i-weixin, .i-zhifubao, .i-mobile {
+                    display: block;
+                    width: 28px;
+                    height: 28px;
+                    margin-right: 5px;
+                    background: url(../images/ioc.png) no-repeat;
+             }
+.bg1{background:url(../images/loginbg.jpg)no-repeat center center;}   
+.bg2{background:url(../images/zhucebg.jpg)no-repeat center center;}   
+#main{height:600px; width: 100%; 
+    .main_c{@include juzhong;
+        #login{ float:right;
+        font-family:$fontfamily;margin-top:68px;width:362px;height:457px;padding:25px; box-sizing:border-box; color:#b2b2b2;background:#fff;
+            h3{width:100%;height:50px;border-bottom:solid 1px #d1d1d1;
+                span{ display:block; width:155px; text-align:center;font:600 18px/50px $fontfamily;color:#888; border-bottom:2px solid #f56600; margin-bottom: -1px;}
+            }
+            ul{margin-top: 12px;  
+                li{width:100%;height:65px;font:12px/65px $fontfamily;
+                    input{color:#b2b2b2;height:38px; width: 100%; border: solid 1px #ddd; padding:10px; box-sizing: border-box;}
+                    #userName{ background: url(../images/userbg.png) no-repeat 10px 10px;text-indent:30px;}
+                    #pwd{background: url(../images/pwdbg.png) no-repeat 10px 10px;text-indent:30px;}
+                    #pwdyz{background: url(../images/pwdbg.png) no-repeat 10px 10px;text-indent:30px;}
+                    #yzm{width:80px;}
+                    #zddl{width:18px;height:18px;background:#fff;}
+                    #btn{background:#f56600; color: #fff; font-size:16px;height:42px; border:0; border-radius:5px;}
+                    #btn:hover{background:#f55100;}
+                    input:focus{outline: none;}
+                }
+                .zddl{ height:40px; line-height: 40px;}
+            }
+             .zhuce{float:left;}
+             .wjmm{float:right;}
+             .fenxiang{padding-top:30px; height: 50px;
+                .other-login{ padding-top: 10px;
+                     .i-qq{background-position: 0 0;}
+                     .i-weibo{background-position: -28px 0;}
+                     .i-weixin{background-position: -56px 0;}
+                     .i-zhifubao{background-position: -86px 0;}
+                     .i-mobile{background-position: -143px 0;}
+                }
+                .shouji{height:29px;line-height:29px;}
+             }
+              
+        }
+    }
+}
+footer{height:38px;
+    p{ text-align:center;font:12px/38px $fontfamily;color:#333;
+        a{color:#333;}
+        span{margin:0px 7px;}
+    }
+}
+

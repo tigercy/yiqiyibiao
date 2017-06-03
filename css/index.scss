@@ -1,0 +1,153 @@
+@charset "utf-8";
+$fontSize:12px;
+$fontfamily:"微软雅黑";
+@mixin juzhong{width:1200px;margin:0 auto;}
+header{background:#fbfbfc;
+    .top1{@include juzhong;
+        height:24px;padding-top:3px;text-align:right;
+        a{height:24px; font:12px/24px $fontfamily;color:#666}
+        a.te{color:#304e80; font-weight:bold;}
+        span{color:#bdbdbd;margin:0 10px 0 11px;}
+        a.te2{ margin-right:20px;}
+    }
+}
+nav{height:41px;background:#bebebe;
+    ul{@include juzhong;
+        li{float:left;text-align:center; height:41px;line-height:41px;width:149px;border-right:solid 1px #aeaeae; 
+            a{font-size:14px; color:#fff; font-weight:bold;}
+           }
+        .hover{background-color:#a4a4a4} 
+        li:hover{background-color:#a4a4a4}
+    }
+}
+/*banner切换*/
+#banner{@include juzhong;height:458px;position:relative; margin-top: 13px;
+     .banner-menu{position:absolute;left:0px;top:0px;width:235px;height:458px;background:rgb(90,90,90);z-index:100;
+        ul{list-style: none; width:190px;margin: 0 auto;
+            li{float:left; height:34px;width: 190px;
+                a{color:#fff;font:12px/34px $fontfamily;}
+            }
+         }
+     }
+    span{ display:block;position:absolute;width:42px;height:69px;background:url(../images/slides.png) no-repeat;}
+    #up{left:235px; top:190px; z-index: 100;background-position: -85px 0px;}
+    #next{right:0px;top:190px; background-position: -120px 0px; z-index: 100;}
+}
+/*精选*/
+#choice{@include juzhong;height:auto; padding:13px 0px 40px 0px;;
+    .channel-column{ width:230px; height:330px; float:left; margin-right:12.5px; position:relative; z-index:1; text-align:center; cursor:pointer; overflow:hidden;
+        .column-img{ width:155px; height:155px; margin:20px auto 0;
+            img{display:block;position:relative;width:100%;height:100%;-moz-transition: all .6s;-ms-transition: all .6s;-o-transition: all .6s;-webkit-transition: all .6s;transition: all .6s;}
+        }
+        .column-img:hover img{ transform: scale(1.1);-ms-transform: scale(1.1);-moz-transform: scale(1.1);-webkit-transform: scale(1.1);-o-transform: scale(1.1);}
+    .column-title,.column-btn{ position:relative;}
+    .column-title{ color:#fff; min-height:82px; overflow:hidden;}
+    .column-title h3{font-size:24px; font-weight:bold; margin-top:25px;color: #fff;}
+    .column-title p{font-size:14px;color: #fff}
+    .column-btn{display:block; width:140px; height:36px; line-height:36px; font-size:14px; text-align:center; border-radius:20px; background-color:#fff; position:absolute; bottom:17px; left:46px; -webkit-transition: all 150ms ease-in-out; transition: all 150ms ease-in-out;}
+    .column-btn:hover{ box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.2); -webkit-transform: translateY(-2px); transform: translateY(-2px);}
+    }
+    .channel-column:last-child{margin-right:0;}
+}
+/*1楼*/
+#floor1{ width: 100%; height:auto; padding-top:20px; background:#f5f5f5;
+       .floor1{@include juzhong; 
+                h3{float:left;height:60px; width:100%;font:22px/60px $fontfamily;
+                    span{float:right;}
+                }
+                .floor1-left{float:left;width:230px; height:553px; background:#d9002f;
+                   .floor1-left-top{width:230px;height:56px;
+                    a{width:115px; height:56px; background: #ab0126; display:inline-block; text-align: center;font:18px/56px $fontfamily; color:#fff;}
+                   }
+                   .floor1-left-bottom{padding:25px; height:auto;
+                       .floor1-left-bottom-nav{ width:180px;
+                           ul{border-bottom: solid 1px #e1395a; padding-bottom:18px;margin-bottom:26px;
+                               li{font:14px/50px $fontfamily; height:50px;
+                                    i{display:inline-block; width:30px; height:30px; background:#ab0126;  color:#fff;text-align:center;font:14px/30px $fontfamily; margin-right:8px;}
+                                    a{ color:#fff;}
+                                    a:hover{color:#ab0126;}
+                           }
+                         
+                       }
+                        .showimg{height:142px;width:180px;background:#fff;}
+                       }
+                       
+                   }
+                }
+                #show{float:right;width:970px;
+                    li{width:230px;height:270px; background:#fff;margin: 0px 0px 12.5px 12.5px; float:left;
+                        .sf{width:230px; height:173px; margin-top:14px;
+                            img{display:inline-block;}
+                        }
+                        p{font:12px/26px $fontfamily;color:#979797;text-align:center;
+                            b{font-weight: bold;color:#343434; display:block;}
+                        }     
+                    }
+                }
+       }    
+}
+
+/*压力仪表*/
+#floor2{width: 100%; height:auto; padding-top:20px; background:#f5f5f5;
+    .floor2-top{@include juzhong; height:60px;font:22px/60px $fontfamily;}
+    .floor2-bottom{@include juzhong; height:513px;
+        .divbox{height:450px;position:relative; border-left: 1px solid #ddd;border-top: 1px solid #ddd;
+            a{border-right: 1px solid #ddd;border-bottom: 1px solid #ddd; position:absolute; overflow:hidden;
+             img{display:block;}
+             p{display:block;position:absolute;color: #fff; box-sizing:border-box; padding:10px; z-index:10; height:auto; width:100%;left:0px;bottom:-100px;background:#999;font: 12px/24px $fontfamily;}
+            }
+            .ad1{left:0px;top:0px;}
+            .ad2{left:601px;top:0px;}
+            .ad3{left:902px;top:0px;}
+            .ad4{left:601px;top:151px;}
+            .ad5{left:0px;top:301px;}
+            .ad6{left:300px;top:301px;}
+            .ad7{left:601px;top:301px;}
+        }
+    }
+}
+/*底部导航*/
+#guide{@include juzhong; padding:13px 0px 13px 0px;
+    .footer_m{width:100%;min-width:1200px;
+        .footer_m_box_l{width:240px;float:left;
+            .footer_m_box_l_qq{height:40px;padding-bottom:15px;border-bottom:2px solid #e3e3e3;overflow:hidden;
+                a{display:block;width:34px;height:40px;float:left;margin-left:10px;text-indent:-9999px;background:url(../images/ico_qq.png) no-repeat left top;}
+                i{display:block;width:122px;height:31px;line-height:31px;margin:5px 0 0 10px;padding-left:18px;color:#fff;float:right;background:url(../images/foot_bg1.png) no-repeat left center;}
+            }
+            .footer_m_box_l_tel{margin-top:24px;
+                dl{padding-left:44px;background:url(../images/foot_ico1.png) no-repeat left top;
+                    dt{font-size:26px;height:36px;line-height:36px;overflow:hidden;}
+                    dd{height:18px;line-height:18px;overflow:hidden;}
+                }
+            }
+        }
+        .footer_m_box_m{float:left;margin-left:60px;overflow:hidden;
+            dl{width:118px;height:190px;float:left;padding-left:26px;background:url(../images/foot_line_bg.png) no-repeat left top;
+                dt{height:18px;line-height:18px;overflow:hidden;margin-top:12px;font-size:14px;font-weight:bold;color:#ff3c00;}
+                dd{margin-top:15px;
+                    div{height:28px;line-height:28px;overflow:hidden;}
+                }
+            }
+        
+        }
+        .footer_m_box_r{float:right;width:180px;text-align:center;
+            strong{display:block;font-size:14px;height:18px;line-height:18px;overflow:hidden;margin-top:12px;}
+            span{display:inline-block;*display:inline;*zoom:1;width:100px;height:100px;overflow:hidden;margin-top:10px;text-align:center;
+                img{width:100px;height:100px;}
+            }
+            i{display:block;height:18px;line-height:18px;overflow:hidden;margin-top:10px;}
+        }
+    }
+}
+/*底部*/
+footer{@include juzhong;height:136px; padding-top: 15px; border-top:solid 1px #dcdcdc;text-align:center; padding-top:16px;
+    div{font:12px/42px $fontfamily;
+        a{color:#333;}
+        span{color:#bbb; padding:0 12px 0 13px;}
+    }
+    p{font:12px/24px "微软雅黑";color:#333; width: 100%; text-align:left;
+        b{font-weight:bold;}
+        a{ margin:3px;}
+    }
+    .text_c{ text-align: center;}
+}

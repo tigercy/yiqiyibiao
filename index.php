@@ -5,7 +5,8 @@
 		<title>仪器仪表网</title>
 		<meta name="description" content="专业生产研发销售:超声波液位计,明渠流量计,超声波液位差计,超声波泥位计,超声波水位计,泥位,液位差,分体式,便携式,外贴式,防腐,防爆,等测量准确,经久耐用的产品，欢迎拨打17719675981" />
 		<meta name="keywords" content="超声波液位计,明渠流量计,超声波液位差计,超声波泥位计,超声波水位计" />
-		<link rel="stylesheet" href="css/index.min.css" />
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/index.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 	</head>
 	<body>
@@ -114,17 +115,16 @@
 		<section id="floor2">
 			<div class="floor2-top">压力仪表</div>
 			<div class="floor2-bottom">
-				<div class="divbox clear">
-					<a href="#"><img src="images/y1.jpg"></a>
-					<a href="#"><img src="images/y2.jpg"></a>
-					<a href="#"><img src="images/y4.jpg"></a>
-					<a href="#"><img src="images/y3.jpg"></a>
-
-					<a href="#"><img src="images/y2.jpg"></a>
-					<a href="#"><img src="images/y3.jpg"></a>
+				<div class="divbox" id="divbox">
+					<a href="#" class="ad1"><img src="images/y1.jpg"><p>压力变送器，电磁流量计，差压变送器，温度变送器</p></a>
+					<a href="#" class="ad2"><img src="images/y2.jpg"><p>压力变送器，电磁流量计，差压变送器，温度变送器</p></a>
+					<a href="#" class="ad3"><img src="images/y4.jpg"><p>压力变送器，电磁流量计，差压变送器，温度变送器</p></a>
+					<a href="#" class="ad4"><img src="images/y3.jpg"><p>压力变送器，电磁流量计，差压变送器，温度变送器</p></a>
+					<a href="#" class="ad5"><img src="images/y5.jpg"><p>压力变送器，电磁流量计，差压变送器，温度变送器</p></a>
+					<a href="#" class="ad6"><img src="images/y3.jpg"><p>压力变送器，电磁流量计，差压变送器，温度变送器</p></a>
+					<a href="#" class="ad7"><img src="images/y2.jpg"><p>压力变送器，电磁流量计，差压变送器，温度变送器</p></a>
 				</div>
 			</div>
-			
 		</section>	
 			
 			
