@@ -11,7 +11,34 @@
 	</head>
 	<body>
 		<?php include "top.php";?>
+		<nav>
+			<ul>
+				<li class="hover"><a href="">网站首页</a></li>
+				<li><a href="">压力仪表</a></li>
+				<li><a href="">液位仪表</a></li>
+				<li><a href="">温度仪表</a></li>
+				<li><a href="">流量仪表</a></li>
+				<li><a href="">解决方案</a></li>
+				<li><a href="">行业动态</a></li>
+				<li><a href="">联系我们</a></li>
+				</li>
+			</ul>	
+		</nav>
 		<section id="banner">
+			<div class="banner-menu">
+				<ul>
+					<li><a href="">压缩天然气瓇胶管</a></li>
+					<li><a href="">橡胶板</a></li>
+					<li><a href="">快速接头系列</a></li>
+					<li><a href="">不锈钢金属软管</a></li>
+					<li><a href="">尼龙轮</a></li>
+					<li><a href="">聚乙烯筛板</a></li>
+					<li><a href="">耐乙酸碱胶管</a></li>
+					<li><a href="">橡胶制品及密封件</a></li>
+					<li><a href="">夹布胶管</a></li>
+					<li><a href="">其他甲钴胺系列</a></li>
+				</ul>
+			</div>
 		</section>
 		<section id="choice" class="clear">
 				<div class="channel-column" style="background:url(images/casebg1.jpg) no-repeat;">

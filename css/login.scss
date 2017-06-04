@@ -1,8 +1,30 @@
 @charset "utf-8";
 $fontSize:12px;
 $fontfamily:"微软雅黑";
+.fl{float:left;}
+.fr{float:right;}
+.clearfix{zoom:1;}
 @mixin juzhong{width:1000px;margin:0 auto;}
-header{height:80px;}
+header{height:80px;
+    .top2{@include juzhong;
+        .logo{
+            width: 325px;
+            height: 36px;
+            margin: 22px 125px 0 5px;
+            a{
+            display: inline-block;
+            width: 325px;
+            height: 36px;
+            background: url(../images/logo.png) no-repeat;
+            }
+        }
+    }
+    .shouc{ padding-top:12px;text-align: right;
+        a{ padding:0 22px;border-right: solid 1px #DCDCDC;}
+        span{ display:block;margin-top:10px; color: #666;}
+    }
+
+}
 .Left{float:left;}
   .i-qq, .i-weibo, .i-weixin, .i-zhifubao, .i-mobile {
                     display: block;
@@ -15,7 +37,7 @@ header{height:80px;}
 .bg2{background:url(../images/zhucebg.jpg)no-repeat center center;}   
 #main{height:600px; width: 100%; 
     .main_c{@include juzhong;
-        #login{ float:right;
+        #login{ float:right;position:relative;
         font-family:$fontfamily;margin-top:68px;width:362px;height:457px;padding:25px; box-sizing:border-box; color:#b2b2b2;background:#fff;
             h3{width:100%;height:50px;border-bottom:solid 1px #d1d1d1;
                 span{ display:block; width:155px; text-align:center;font:600 18px/50px $fontfamily;color:#888; border-bottom:2px solid #f56600; margin-bottom: -1px;}
@@ -46,10 +68,16 @@ header{height:80px;}
                 }
                 .shouji{height:29px;line-height:29px;}
              }
-              
         }
     }
 }
+
+#userNamelb{color:#FF3C00; position:absolute;left:40px;top:120px}
+#pwdlb{color:#FF3C00; position:absolute;left:40px;top:186px}
+#pwdyzlb{color:#FF3C00; position:absolute;left:40px;top:248px}
+#yzmlb{color:#FF3C00; position:absolute;left:40px;top:313px}
+#yzmnum{font:600 14px $fontfamily; color:#000; margin-left:15px;letter-spacing:4px; border: solid 1px #FF3C00; padding: 5px;}
+
 footer{height:38px;
     p{ text-align:center;font:12px/38px $fontfamily;color:#333;
         a{color:#333;}

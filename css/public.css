@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,td{margin:0;padding:0;}
-body{font:12px  "宋体"; word-wrap:break-word;}
+body{font:12px  "微软雅黑"; word-wrap:break-word;}
 a,u,s,del{color:#666;text-decoration:none} 
 fieldset ,a img,.bor0 {border:0;}
 i,em,b{font-style:normal;font-weight:100;}

@@ -11,15 +11,19 @@
 	</head>
 	<body>
 		<header>
-			头部
+			<?php include "top2.php";?>
 		</header>
 		<section id="main" class="bg1">
 			<div class="main_c clear">
 				<div id="login">
 					<h3><span>账号登录</span></h3>
 					<ul>
-						<li><input name="userName" id="userName" type="text"  placeholder="用户名/手机号/邮箱" /></li>
-						<li><input name="pwd" id="pwd" type="password" placeholder="密码"/></li>
+						<li><input id="userName" type="text"  placeholder="用户名/手机号/邮箱" />
+							<label id="userNamelb"></label>
+						</li>
+						<li><input id="pwd" type="password" placeholder="密码"/>
+							<label id="pwdlb"></label>
+						</li>
 						<li class="zddl"><input type="checkbox" id="zddl"/>自动登录</li>
 						<li><input type="button" id="btn" value="登录"/></li>
 					</ul>
@@ -42,12 +46,9 @@
                                     <dd class="other-login shouji">
                                         <a class="i-mobile Left" href="#"></a>手机快捷登录
                                     </dd>
-                               </dl>
-							
+                              </dl>
 						</div>
 					</div>
-					
-					
 				</div>
 			</div>
 		</section>
@@ -62,6 +63,42 @@
 	</body>
 </html>
 <script>
+$(function(){
+		$("#btn").click(function(){
+		if($("#userName").val()==""){
+			$("#userNamelb").html("用户名不能为空");
+		}else if($("#pwd").val()==""){
+			$("#pwdlb").html("密码不能为空");
+		}else{
+				$.post("logingo.php",{UserName:$("#userName").val(),Password:$("#pwd").val()},function(data){
+					if(data=="1"){
+						alert("登录成功");
+						location.href="index.php";
+						 setCookie("userName",$("#userName").val(),5);
+					}else{
+						$("#userNamelb").html("用户名名或密码错误");
+					}
+				});
+			}
+		});
+	//验证用户名不能为空
+	$("#userName").blur(function(){
+		if($("#userName").val()==""){
+			$("#userNamelb").html("用户名不能为空");
+		}else{$("#userNamelb").html("");}
+	});
+	//验证密码不能为空
+	$("#pwd").blur(function(){
+		if($("#pwd").val()==""){
+			$("#pwdlb").html("密码不能为空");
+		}else{$("#pwdlb").html("");}
+	});
 	
+});
 	
+function setCookie(key,value,dayCount){
+	var d = new Date();
+	d.setDate(d.getDate()+dayCount);
+	document.cookie = encodeURIComponent(key+"="+value)+";expires="+d.toGMTString();
+}
 </script>
