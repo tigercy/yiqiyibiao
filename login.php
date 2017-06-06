@@ -27,7 +27,7 @@
 						<li class="zddl"><input type="checkbox" id="zddl"/>自动登录</li>
 						<li><input type="button" id="btn" value="登录"/></li>
 					</ul>
-					<div class="clear"><a href="register.php" class="zhuce">注册</a><a href="#" class="wjmm">忘记密码</a></div>
+					<div class="clear"><a href="register.html" class="zhuce">注册</a><a href="#" class="wjmm">忘记密码</a></div>
 					<div class="fenxiang clear">
 						<div class="zhuce kuaiji1">
 								<dl>
@@ -54,7 +54,7 @@
 		</section>
 		<footer>
 				<p>仪器仪表自动化&nbsp;&nbsp;版权所有 Copyright&nbsp;©&nbsp;2008-2017&nbsp;1718ZDH&nbsp;Corporation,&nbsp;All&nbsp;Rights&nbsp;Reserved
-               &nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="index.php">仪表首页</a><span>|</span>
+               &nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="index.html">仪表首页</a><span>|</span>
                 <a target="_blank" href="#">官方微博</a><span>|</span>
                 <a target="_blank" href="#">意见反馈</a><span>|</span>
 				<a target="_blank" href="#">意见反馈</a><span>|</span>

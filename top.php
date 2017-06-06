@@ -2,12 +2,12 @@
 	<div class="top1">
 		<div class="top1c clear">
 			<span class="welcome fl">仪表网欢迎您，专注自动化热工仪表交易平台</span>
-			<div class="login fr"><span id="yonghu"></span><a href="login.php" class="denglu">请登录</a><a href="register.php" class="zuce">免费注册</a><a href="">收藏本站</a><a href="">帮助中心</a></div>
+			<div class="login fr"><span id="yonghu"></span><a href="login.html" class="denglu">请登录</a><a href="register.html" class="zuce">免费注册</a><a href="">收藏本站</a><a href="">帮助中心</a></div>
 		</div>
 	</div>
 	<div class="top2 clear">
 		<div class="logo fl">
-			<a href="index.php"></a>
+			<a href="index.html"></a>
 		</div>
 		<div class="search-box fl">
 			<div class="fixed-search width-fixed">
@@ -25,7 +25,7 @@
 			</div>
 		</div>
 		<div class="fl right-but">
-			<a rel="nofollow" href="#" target="_blank" >我购买的商品</a>
+			<span rel="nofollow" target="_blank"  id="mygwc">我购买的商品</span>
 		</div>
 	</div>
 	<div class="nav clear">
@@ -880,14 +880,14 @@
 			  </div>
 		</div>	
 		<div class="fl classify-nav-other">
-			<a href="#">压力仪表</a>
-			<a href="#">液位仪表</a>
+			<a href="product.html">压力仪表</a>
+			<a href="product.html">液位仪表</a>
 			<a href="#">温度仪表</a>
 			<a href="#">流量仪表</a>
 			<a href="#">其它仪表</a>
 			<a href="#">解决方案</a>
-			<a href="#">行业动态</a>
-			<a href="#">联系我们</a>
+			<a href="news.html">行业动态</a>
+			<a href="about.html">联系我们</a>
 		</div>
 	</div>
 </header>

@@ -10,6 +10,13 @@
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 	</head>
 	<body>
+		<section id="add">
+			<div class="add-main">
+				<a href="subject.html" id="add2"><img src="images/ad02.jpg"></a>
+				<a href="subject.html" id="add1"><img src="images/ad01.jpg"></a>
+				<span id="guanbi">×</span>
+			</div>
+		</section>	
 		<?php include "top.php";?>
 		<section id="banner">
 		</section>
@@ -112,9 +119,6 @@
 				</div>
 			</div>
 		</section>	
-			
-			
-			
 		<section id="guide" class="clear">
 		  <div class="footer_m">
             <div class="footer_m_box_l">
@@ -188,3 +192,33 @@
 	</body>
 </html>
 <script type="text/javascript" src="js/index.js" ></script>
+<script>
+	var j = $("#add1"),
+    g = $("#add2"),
+    h = $("#add"),
+	a, i;
+	  h.hover(function() {
+	  	$(".add-main").animate({height:"250px"},300);
+	  	g.css({"display":"block"});
+        clearTimeout(i);
+        a = setTimeout(function() {
+            if (!j.is(":animated") && !g.is(":animated")) {
+                g.slideDown();
+                j.slideUp();
+            }
+        },
+        300);
+    },
+    function() {
+        clearTimeout(a);
+        i = setTimeout(function() {
+        	$(".add-main").animate({height:"80px"},300);
+            if (!j.is(":animated") && !g.is(":animated")) {
+                g.slideUp();
+                j.slideDown();
+                
+            } 
+        },
+        300);
+    });
+</script>

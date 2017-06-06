@@ -1,6 +1,6 @@
 <div class="top2 clear">
 	<div class="logo fl">
-		<a href="index.php"></a>
+		<a href="index.html"></a>
 	</div>
 	<div class="shouc fr">
 		<a href="">收藏本站</a><a href="">帮助中心</a>

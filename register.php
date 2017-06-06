@@ -33,13 +33,13 @@
 
 						<li><input type="button" id="btn" value="注册"/></li>
 					</ul>
-					<div class="clear"><span class="zhuce">已经注册</span><a href="login.php" class="wjmm">登录</a></div>
+					<div class="clear"><span class="zhuce">已经注册</span><a href="login.html" class="wjmm">登录</a></div>
 				</div>				
 			</div>
 		</section>
 		<footer>
 				<p>仪器仪表自动化&nbsp;&nbsp;版权所有 Copyright&nbsp;©&nbsp;2008-2017&nbsp;1718ZDH&nbsp;Corporation,&nbsp;All&nbsp;Rights&nbsp;Reserved
-               &nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="index.php">仪表首页</a><span>|</span>
+               &nbsp;&nbsp;&nbsp;&nbsp; <a target="_blank" href="index.html">仪表首页</a><span>|</span>
                 <a target="_blank" href="#">官方微博</a><span>|</span>
                 <a target="_blank" href="#">意见反馈</a><span>|</span>
 				<a target="_blank" href="#">意见反馈</a><span>|</span>

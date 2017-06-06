@@ -5,6 +5,22 @@ $fontfamily:"微软雅黑";
 .fl{float:left;}
 .fr{float:right;}
 .clearfix{zoom:1;}
+#add{width:100%;background-color:#670da3;height:auto;
+     .add-main{width:1228px;
+     height:80px;
+     margin:0 auto;
+     position:relative;
+        #add1{display:block;height:80px;position:absolute; bottom:0px;}
+        #add2{display:none;height:250px;position:absolute; top:0px;}
+        span{position:absolute;
+             right:0px;
+              top:5px;
+              color:#fff;
+              font:100 26px "宋体";
+              cursor:pointer;
+          }
+     }
+}
 header{
     .top1{
         height: 12px;
@@ -31,6 +47,20 @@ header{
             }
         }
     }
+    .top2gw{@include juzhong;
+            height:70px;
+            .logo{
+                width: 325px;
+                height: 36px;
+                margin:14px 125px 0 5px;
+                a{
+                display: inline-block;
+                width: 325px;
+                height: 36px;
+                background: url(../images/gwclogo.png) no-repeat;
+                }
+            }
+        }
     .top2{@include juzhong;
         padding-top:30px;
         height:78px;
@@ -119,7 +149,7 @@ header{
         }
         .right-but{
             height: 44px;
-            a{
+            span{
                 height: 42px;
                 width: 125px;
                 text-align: center;
@@ -306,6 +336,7 @@ nav{height:41px;background:#bebebe;
         z-index: 11;
         border-bottom: 1px #eee solid;
         box-shadow: 0 1px 1px rgba(0,0,0,.05);
+
        .top2{@include juzhong;
         height:78px;
         .logo{
@@ -319,6 +350,10 @@ nav{height:41px;background:#bebebe;
             background: url(../images/logo.png) no-repeat;
             }
         }
+        
+
+        
+        
         .search-box{
             width: 540px;
             margin-right: 57px;
@@ -443,10 +478,10 @@ nav{height:41px;background:#bebebe;
     .channel-column:last-child{margin-right:0;}
 }
 /*1楼*/
-#floor1{ width: 100%; height:auto; padding-top:20px; background:#f5f5f5;
-       .floor1{@include juzhong; 
+#floor1{ width: 100%; height:auto;  background:#f5f5f5;
+       .floor1{@include juzhong; padding-top:20px;
                 h3{float:left;height:60px; width:100%;font:22px/60px $fontfamily;
-                    span{float:right;}
+                    span{float:right;font-size: 12px;}
                 }
                 .floor1-left{float:left;width:230px; height:553px; background:#d9002f;
                    .floor1-left-top{width:230px;height:56px;
@@ -476,8 +511,121 @@ nav{height:41px;background:#bebebe;
                             b{font-weight: bold;color:#343434; display:block;}
                         }     
                     }
+                } 
+                #show1{float:right;width:1200px;
+                    li{width:230px;height:270px; background:#fff;margin: 0px 10px 12.5px 0px; float:left;
+                        .sf{width:230px; height:173px; margin-top:14px;
+                            img{display:inline-block;}
+                        }
+                        p{font:12px/26px $fontfamily;color:#979797;text-align:center;
+                            b{font-weight: bold;color:#343434; display:block;}
+                        }     
+                    }
                 }
        }    
+
+       
+}
+#crumbs{width: 100%; height:auto;background:#f5f5f5;
+     .floor1_p{@include juzhong; 
+          .weizhi{
+              font:100 12px/42px $fontfamily;
+              span{margin: 0 10px;}
+          }
+      } 
+}
+#productshow{width: 100%; height:auto;background:#fff;
+    .product-top{@include juzhong; 
+        .product-top-left{width:450px;height:auto;
+            .productbox{margin-top: 10px;width:450px;height:450px;position:relative;
+                    #suoluetu{width:450px;
+                               height:450px;
+                               position:absolute;
+                               left:0px;
+                               top:0px;
+                               border: solid 1px #eee;
+                               background: url(../images/jingzi.png) no-repeat right bottom;
+                        img{width:450px; height:450px; position:absolute;}
+                        #kdj{width:150px; height:150px; position:absolute;border:solid 1px #ccc; display:none;}
+                    }
+                    #jingzi{width:500px;height:500px;overflow:hidden; position:absolute;left:451px; top:0px; border: solid 1px #eee; background:#fff; display:none;}
+                    #jingziId{position:absolute;}
+            }
+        }
+        .product-top-right{margin-left:20px;padding-top:10px; width:730px;
+            h1{font:600 16px/36px $fontfamily;color:#666;}
+            .product-minute{width:100%; 
+                        height:125px; 
+                        background:#f3f3f3 url(../images/footer-gear-1.png) no-repeat left bottom;
+                        padding:10px;
+                        font: 12px/26px $fontfamily;
+                        text-indent: 2em;
+            }
+            .product-td{width: 100%;height:auto; padding-top: 10px;
+                span{display:inline-block; border: solid 1px #ccc;padding:8px; margin:3px;}
+            }  
+            .product-price{ padding: 10px 0px; font:600 26px $fontfamily;color:#D9002F;
+                
+            }
+            .product-gm{width:100%; padding-top: 15px;
+                .num{display:inline-block;
+                 width:20px;
+                  height:46px;
+                  border:solid 1px #ccc;
+                  font:12px/46px $fontfamily;
+                  padding:0px 18px 0px 12px;
+                  position:relative;
+                    .jia{position:absolute;
+                     width:15px;
+                     height:23px;
+                     background:#f1f1f1;
+                     border:1px solid #ccc; 
+                     line-height:22px;
+                     right:-1px;
+                     top:-1px;
+                     text-align: center;}
+                    .jian{position:absolute;
+                     width:15px;
+                     height:23px;
+                     background:#f1f1f1;
+                     border:1px solid #ccc; 
+                     line-height:22px;
+                     right:-1px;
+                     bottom:-1px;
+                     text-align: center;}
+                }
+                .gwc{display:inline-block; width:140px; height:46px; text-align:center;font:600 16px/46px $fontfamily; background:#df3033; color:#fff; margin-left:10px; cursor: pointer;}
+                #zx{display:inline-block;width:140px; height:46px; text-align:center;font:600 16px/46px $fontfamily; background:#f56600; color:#fff; margin-left:10px;}
+            } 
+            
+        }
+    }
+    .product-main{@include juzhong; 
+        .product-main-left{width:208px;border: solid 1px #eee;
+            h3{background:#f7f7f7; font:600 14px/39px $fontfamily;color:#666;border-bottom: solid 1px #eee; padding-left: 10px;}
+            ul li{width:180px;padding: 0 14px;
+                p{display:block;width:180px; height:180px; margin: 0 auto;}
+                img{max-width:180px;}
+                i{display:block;color:#e4393c;font:600 13px/28px $fontfamily;}
+            }
+        }
+        .product-main-right{width:980px;
+            h3{background:#f7f7f7; 
+            font:600 14px/39px $fontfamily;
+            color:#666;
+            border: solid 1px #eee;
+            border-bottom: solid 1px #0070ce;
+                span{
+                    display:block;
+                    width:100px;
+                    background:#0070ce;
+                    color:#fff;
+                    text-align: center;
+                }
+            }
+            
+        }
+    }
 }
 
 /*压力仪表*/
@@ -532,8 +680,81 @@ nav{height:41px;background:#bebebe;
         }
     }
 }
+#shopcenter{@include juzhong;height:auto;padding:20px 0;
+    h3{font:600 16px/36px $fontfamily; color:#e8393c;}
+    .shoptitle{ background:#f3f3f3;border:solid 1px #e0e0e0; line-height:30px;
+        .qx{display:inline-block;width:100px;
+            input{
+                margin: 0 10px;
+            }}
+        .pm{display:inline-block;width:700px;}
+        .dj{display:inline-block;width:90px;}
+        .sl{display:inline-block;width:90px;}
+        .xj{display:inline-block;width:80px;}
+        .cz{display:inline-block; text-align: center;}
+    }
+    .productSortID{border:solid 1px #f1f1f1;height:auto;border-top: solid 2px #aaa; margin-top:16px; padding:10px 0;
+        .qx{width:150px;float: left;
+           input{float:left;
+                margin: 0 10px;
+             }
+            p{ float:left; display:inline-block;width:90px;height:90px;border: solid 1px #eee;
+                img{ max-width:80px;}
+            }
+            
+         }
+        .pm{width:450px;float: left;padding: 0px 200px 0px 0px; line-height:23px;}
+        .dj{width:80px;float: left;}
+        .sl{width:70px;float: left;
+            border:solid 1px #ccc; position: relative; text-align: center;
+            .jian{display:block; 
+            border: solid 1px #ccc;
+             width:15px; 
+             position:absolute;
+             left:-1px;
+             top:-1px;
+             }
+            .jia{display:block; 
+            border: solid 1px #ccc;
+             width:15px; 
+             position:absolute;
+             right:-1px;
+             top:-1px;
+             }
+        }
+        .xj{width:120px;float: left; text-align: center;}
+        .cz{width:80px;text-align: center;float: left;}
+    }
+    .jiesuan{width:100%; margin-top: 10px;
+        span{display:block;
+        float:right;
+        background:#e64346;
+        width:100px;
+        height:50px;
+        font:600 16px/50px $fontfamily;
+        color:#fff;
+        text-align: center;
+        cursor: pointer;
+        }
+    }
+    
+}
+
+#zhuanti{width:100%;height:auto;
+    .banner{width:100%; height:658px; background: url(../images/zhuanti.png) center center;}
+}
+#chenggong{width:160px;
+height:45px;font:600 16px/45px '微软雅黑'; 
+color:#fff;
+position:absolute;
+background:#0070ce;
+z-index: 10;
+text-align:center;
+top:30px;
+display:none;
+}
 /*底部*/
-footer{@include juzhong;height:136px; padding-top: 15px; border-top:solid 1px #dcdcdc;text-align:center; padding-top:16px;
+footer{@include juzhong;height:136px; padding-top: 15px;text-align:center; padding-top:16px;
     div{font:12px/42px $fontfamily;
         a{color:#333;}
         span{color:#bbb; padding:0 12px 0 13px;}
