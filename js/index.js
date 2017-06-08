@@ -113,6 +113,10 @@ $(function(){
 		}
 	});
 	
+	var ctop=$(window).height()-230;
+	$("#kefu").css({"top":ctop+"px"});
+	$("#kefu .zd").css({"display":"none"});
+	
 });
 
 function getCookie(key){

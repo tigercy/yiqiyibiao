@@ -14,7 +14,7 @@
 		<div class="top1">
 			<div class="top1c clear">
 				<span class="welcome fl">仪表网欢迎您，专注自动化热工仪表交易平台</span>
-				<div class="login fr"><span id="yonghu"></span><a href="login.html" class="denglu">请登录</a><a href="register.html" class="zuce">免费注册</a><a href="">收藏本站</a><a href="">帮助中心</a></div>
+				<div class="login fr"><span id="yonghu"></span><a href="login.html" class="denglu">请登录</a><a href="register.html" class="zuce">免费注册</a><a href="index.html" class="denglu">回到首页</a><a href="">收藏本站</a><a href="">帮助中心</a></div>
 			</div>
 		</div>
 	</header>	

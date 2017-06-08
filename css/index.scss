@@ -495,17 +495,18 @@ nav{height:41px;background:#bebebe;
                                     a{ color:#fff;}
                                     a:hover{color:#ab0126;}
                            }
-                         
                        }
-                        .showimg{height:142px;width:180px;background:#fff;}
-                       }
-                       
+                        .showimg{height:142px;width:180px;background:#fff; text-align:center;
+                        overflow:hidden;
+                            img{display:block; max-height:140px; margin:0 auto;}
+                        }
+                      }
                    }
                 }
                 #show{float:right;width:970px;
                     li{width:230px;height:270px; background:#fff;margin: 0px 0px 12.5px 12.5px; float:left;
                         .sf{width:230px; height:173px; margin-top:14px;
-                            img{display:inline-block;}
+                            img{display:inline-block; max-height:170px;}
                         }
                         p{font:12px/26px $fontfamily;color:#979797;text-align:center;
                             b{font-weight: bold;color:#343434; display:block;}
@@ -515,7 +516,7 @@ nav{height:41px;background:#bebebe;
                 #show1{float:right;width:1200px;
                     li{width:230px;height:270px; background:#fff;margin: 0px 10px 12.5px 0px; float:left;
                         .sf{width:230px; height:173px; margin-top:14px;
-                            img{display:inline-block;}
+                            img{display:inline-block; max-height:170px;}
                         }
                         p{font:12px/26px $fontfamily;color:#979797;text-align:center;
                             b{font-weight: bold;color:#343434; display:block;}
@@ -523,8 +524,6 @@ nav{height:41px;background:#bebebe;
                     }
                 }
        }    
-
-       
 }
 #crumbs{width: 100%; height:auto;background:#f5f5f5;
      .floor1_p{@include juzhong; 
@@ -623,7 +622,6 @@ nav{height:41px;background:#bebebe;
                     text-align: center;
                 }
             }
-            
         }
     }
 }
@@ -726,6 +724,17 @@ nav{height:41px;background:#bebebe;
         .cz{width:80px;text-align: center;float: left;}
     }
     .jiesuan{width:100%; margin-top: 10px;
+        #productsum{display:block;
+        float:right;
+        width:100px;
+        height:50px;
+        font:600 16px/50px $fontfamily;
+        color:#ec191d;
+        text-align: center;
+        cursor: pointer;
+        }
+    
+    
         span{display:block;
         float:right;
         background:#e64346;
@@ -764,4 +773,18 @@ footer{@include juzhong;height:136px; padding-top: 15px;text-align:center; paddi
         a{ margin:3px;}
     }
     .text_c{ text-align: center;}
+}
+
+#kefu{position:fixed;
+    z-index: 20;
+    right:25px;
+    top:325px; width:72px;height:auto;
+        .qq{width:72px;height:73px;background: #0070ce url(../images/r_qq.png) no-repeat center center;}
+        .qq:hover{background-color:#1782dd;}
+        .wx{width:72px;height:73px;background: #3cae35 url(../images/r_wx.png) no-repeat center center;}  
+        .wx:hover{background-color:#12990a;}
+        .dh{width:72px;height:73px;background: #f56600 url(../images/r_phone.png) no-repeat center center;}    
+        .dh:hover{background-color:#eb4005;}
+        .zd{width:72px;height:73px;background: #a2a3a8 url(../images/r_top.png) no-repeat center center;}  
+        .zd:hover{background-color:#bebebe;}
 }

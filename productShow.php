@@ -107,8 +107,8 @@ $productId=$_GET['SortID'];
 				alert("请先登录");
 				location.href="login.html";
 			}else{
-				$.get("addShoppingCart.php",{vipName:userName,goodsId:productID,goodsCount:$(".cont").html()},function(date){
-					if(date){
+				$.get("addShoppingCart.php",{vipName:userName,goodsId:productID,goodsCount:$(".cont").html()},function(data){
+					if(data){
 						$("#chenggong").fadeIn(750,function(){
 							$("#chenggong").fadeOut(1000);
 						});
@@ -118,8 +118,8 @@ $productId=$_GET['SortID'];
 		});
 		
 		$(".jia").click(function(){
-			var num=$(".cont").html();
-				num++;
+			var num=$(".cont").html();  
+				num++;	
 			$(".cont").html(num);	
 			
 		});
@@ -127,8 +127,6 @@ $productId=$_GET['SortID'];
 		$(".jian").click(function(){
 			var num=$(".cont").html();
 			if(num==1){
-				num=1;
-				$(".cont").html(num);
 			}else{
 				num--;
 				$(".cont").html(num);

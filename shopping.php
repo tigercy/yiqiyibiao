@@ -39,39 +39,90 @@
 			<div class="cz">操作</div>
 		</div>
 		<div id="neirong">
-			
-			
 		</div>
-
-		<div class="jiesuan clear"><span>去结算</span></div>
+		<div class="jiesuan clear"><span>去结算</span><i id="productsum"></i></div>
 	</section>
 	<?php  include "bottom.php"; ?>
 	</body>
 </html>
 <script type="text/javascript" src="js/index.js" ></script>
 <script>
+$(function(){
 	var userName="";
 	userName=getCookie("userName");
 	if(userName==""||userName==null){
 		location.href="404.html";	
 	}else{
-		$.get("getShoppingCart.php",{vipName:userName},function(data){
+		//添加数据
+		goodslist(userName);
+	}
+	//删除
+	$("#neirong").delegate(".shanchu","click",function(){
+	  	var goodid=$(this).attr("sortid");
+	  	$.get("deleteGoods.php",{vipName:userName,goodsId:goodid},function(data){
+	  		if(data){
+	  			goodslist(userName);
+	  		}else{
+	  			alert("数据处理异常,请稍后来试验");
+	  		}
+	  	});
+	});
+	//加
+	$("#neirong").delegate(".jia","click",function(){
+		var num=$(this).prev().html();
+		var goodid=$(this).attr("sortid");
+		num++;
+		$.get("updateGoodsCount.php",{vipName:userName,goodsId:goodid,goodsCount:num},function(data){
+			if(data){
+				goodslist(userName);
+			}else{
+				alert("数据处理异常,请稍后来试验");
+			}
+		});
+	});
+	
+	$("#neirong").delegate(".jian","click",function(){
+	 	var num=$(this).next().html();
+	 	var goodid=$(this).attr("sortid");
+	 		if(num<=1){
+
+			}else{
+				num--;
+				$.get("updateGoodsCount.php",{vipName:userName,goodsId:goodid,goodsCount:num},function(data){
+					if(data){
+						goodslist(userName);
+					}else{
+						alert("数据处理异常,请稍后来试验");
+					}
+				});
+			}
+	});
+	
+});
+
+function goodslist(userName){
+	$.get("getShoppingCart.php",{vipName:userName},function(data){
 			if(data){
 				var shuju=eval(data);
 				var str="";
+				var sum=0;
 				for(var i in shuju){
 					str+="<div class='productSortID clear'>";
 					str+="<div class='qx clear'><input type='checkbox' /><p class='valign'><img src='"+shuju[i].Upimg+"'></p></div>";
 					str+="<div class='pm'>"+shuju[i].Title+"</div>";
 					str+="<div class='dj'>¥"+shuju[i].Ykeywords+"</div>";
-					str+="<div class='sl'><span><i class='jian'>-</i><i class='num'>"+shuju[i].goodsCount+"</i><i class='jia'>+</i></span></div>";
+					str+="<div class='sl'><span><i class='jian' sortid='"+shuju[i].ID+"'>-</i><i class='num'>"+shuju[i].goodsCount+"</i><i class='jia' sortid='"+shuju[i].ID+"'>+</i></span></div>";
 					str+="<div class='xj'>¥"+(shuju[i].Ykeywords*shuju[i].goodsCount)+"</div>";
-					str+="<div class='cz'>删除</div>";
+					str+="<div class='shanchu' sortid='"+shuju[i].ID+"'>删除</div>";
 					str+="</div>";
+					sum+=(shuju[i].Ykeywords*shuju[i].goodsCount);
 				}
+				$("#neirong").html("");
 				$("#neirong").append(str);
+				$("#productsum").html("￥："+sum);
 			}
-		});
-	}
+	});
+}
+
 </script>
 

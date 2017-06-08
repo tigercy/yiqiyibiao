@@ -5,3 +5,10 @@
 	</div>
 	<p class="text_c">仪器仪表网 版权所有&copy;2017-2020 陕ICP12345678<br>如发现侵权问题可联系1418001866@qq.com我们第一时间改正</p>
 </footer>
+
+<div id="kefu">
+	<div class="qq"></div>
+	<div class="wx"></div>
+	<div class="dh"></div>
+	<div class="zd"></div>
+</div>

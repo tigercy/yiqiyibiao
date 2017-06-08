@@ -92,14 +92,7 @@
 						</div>	
 					</div>
 					<ul class="clear" id="show">
-						<li style="position:relative;"><a href="#"><div class="valign sf"><img src="images/p1.png"/></div><p><b>加防震环金属软管</b>质量不错不生锈适用时间长</p><i style="position:absolute;left:0px;bottom:0px; z-index:-1;display:block;width:230px;height:100px;background:#fcf;"></i></a></li>
-						<li><a href="#"><div class="valign sf"><img src="images/p2.png"/></div><p><b>加防震环金属软管</b>质量不错不生锈适用时间长</p></a></li>
-						<li><a href="#"><div class="valign sf"><img src="images/p3.png"/></div><p><b>加防震环金属软管</b>质量不错不生锈适用时间长</p></a></li>
-						<li><a href="#"><div class="valign sf"><img src="images/p4.png"/></div><p><b>加防震环金属软管</b>质量不错不生锈适用时间长</p></a></li>
-						<li><a href="#"><div class="valign sf"><img src="images/p5.png"/></div><p><b>加防震环金属软管</b>质量不错不生锈适用时间长</p></a></li>
-						<li><a href="#"><div class="valign sf"><img src="images/p6.png"/></div><p><b>加防震环金属软管</b>质量不错不生锈适用时间长</p></a></li>
-						<li><a href="#"><div class="valign sf"><img src="images/p7.png"/></div><p><b>加防震环金属软管</b>质量不错不生锈适用时间长</p></a></li>
-						<li><a href="#"><div class="valign sf"><img src="images/p8.png"/></div><p><b>加防震环金属软管</b>质量不错不生锈适用时间长</p></a></li>
+						
 					</ul>
 				</div>
 				
@@ -198,11 +191,10 @@
     h = $("#add"),
 	a, i;
 	  h.hover(function() {
-	  	$(".add-main").animate({height:"250px"},300);
-	  	g.css({"display":"block"});
         clearTimeout(i);
         a = setTimeout(function() {
             if (!j.is(":animated") && !g.is(":animated")) {
+            	$(".add-main").animate({height:"250px"},300);
                 g.slideDown();
                 j.slideUp();
             }
@@ -212,8 +204,8 @@
     function() {
         clearTimeout(a);
         i = setTimeout(function() {
-        	$(".add-main").animate({height:"80px"},300);
             if (!j.is(":animated") && !g.is(":animated")) {
+            	$(".add-main").animate({height:"80px"},300);
                 g.slideUp();
                 j.slideDown();
                 
@@ -221,4 +213,20 @@
         },
         300);
     });
+    
+    $("#guanbi").click(function(){
+    	$("#add").css({"display":"none"});
+    	
+    });
+    
+    
+    $.get("getGoodsList.php",function(data){
+		var shuju=eval(data);
+		var str="";
+		for(var i=0;i<8;i++){
+			str+="<li><a href='productShow"+shuju[i].ID+".html'><div class='valign sf'><img src='"+shuju[i].Upimg+"'/></div><p><b>"+shuju[i].Title+"</b>"+shuju[i].Ydescription+"</p></a></li>";
+		}	
+		$("#show").append(str);
+	});
+    
 </script>

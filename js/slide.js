@@ -45,12 +45,14 @@ Slideshow.prototype.initUI=function(){
 	var that=this;
 	//当鼠标
 	$("#listitem li").mouseover(function(){	
-		
 		setTimeout(function(){
 			that.goImg($(this).attr("ord"));
 		},that.timeSpace);
 	
 	});
+	
+	
+	
     //鼠标移动到框上的时候让轮播图停止
     $(this.boxId).mouseover(function(){
     	$("#up").css({"background-position":"0px 0px"});
@@ -74,9 +76,6 @@ Slideshow.prototype.initUI=function(){
 			}
     		that.goStep();
     	});
-    	
-    	
-    	
 	//当鼠标移走时让轮播继续
 	$(this.boxId).mouseout(function(){
 		$("#up").css({"background-position":"-85px 0px"});
@@ -88,13 +87,10 @@ Slideshow.prototype.initUI=function(){
 }
 //调用go方法设置计时器
 Slideshow.prototype.go = function(){
-	var that = this;
 	if(this.timer!=null){
 		window.clearInterval(this.timer);
 	}
-	this.timer = setInterval(function(){
-		that.goStep();
-	},this.timeSpace);
+	this.timer=setInterval(()=>this.goStep(),this.timeSpace);
 }
 
 //改变图片。
